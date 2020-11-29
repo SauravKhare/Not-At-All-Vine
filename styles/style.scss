@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+$white: #ffffff;
+$light-grey: #e5e5e5;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    background-image:  radial-gradient($light-grey 1.3px, transparent 1.3px), radial-gradient($light-grey 1.3px, $white 1.3px);
+    background-size: 52px 52px;
+    background-position: 0 0,26px 26px;
+    color: #333333;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.navbar {
+    background: #00BF8F;
+    color: #ffffff;
+    height: 55px;
+
+    &.navbar .nav {
+        display: flex;
+        color: #ffffff;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+    }
+    &.navbar a {
+        color: #ffffff;
+        padding: 1rem;
+        text-decoration: none;
+    }
+}
+
+.nav-hero {
+    flex: 2;
+
+    &.nav-hero img {
+        width: auto;
+        height: 1.7rem;
+    }
+}
+
+.post-card {
+    background: #ffffff;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin: 40px auto auto auto;
+    // padding: 20px;
+}
+
+.post-card-heading {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1rem;
+}
+
+.post-card-heading img {
+    width: 40px;
+    height: 40px;
+}
+
+.post-card-user-name {
+    margin: 0 0 0 20px;
+    text-decoration: none;
+}
+
+.post-card-user-name a {
+    text-decoration: none;
+}
+
+.post-card-content img {
+    width: 100%;
+    height: auto;
+}
+
+.post-card-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.post-card-bottom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-card-bottom-nav-like {
+    margin: 0.2rem;
+    &.post-card-bottom-nav-like span {
+        margin: auto 0.2rem auto 0.2rem;
+    }
+    &.post-card-bottom-nav-like button {
+        background: none;
+        border: none;
+        outline: 0;
+        margin: 0 0 0 -1.5rem;
+    }
+}
+
+.post-card-bottom-nav-notlike {
+    margin: 0.5rem;
+    &.post-card-bottom-nav-notlike span {
+        margin: auto 0.5rem auto 0.5rem;
+    }
+    &.post-card-bottom-nav-notlike button {
+        background: none;
+        border: none;
+        outline: 0;
+        margin: 0 -1.5rem 0 0;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .container {
+        margin: 0 10px 0 10px;
+    }
+}
